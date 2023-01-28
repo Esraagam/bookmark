@@ -1,0 +1,45 @@
+<html>
+    
+
+
+<head>
+        <link rel="stylesheet" href="css/bootstrap.min.css" >
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container my-4 py-4">
+            <h1>book marker</h1>
+            <hr/>
+            <div class=" form-project text-center bg-light pt-3 ">
+                <h2>book mark your favourite site</h2>
+                <div class="mx-5">
+                <label class="text-center py-2">site name</label>
+                <input  id="name" type="text" class="form-control py-2  " placeholder="bookmark name site">
+                 </div>
+                 <div class="mx-5">
+                <label class="text-center py-2">site url</label>
+                <input  id="url" type="text" class="form-control " placeholder="bookmark url site">
+                 </div>
+                <button  id="addbtn"   disabled class="btn btn-info my-2">submit</button>
+            </div>
+            <input onkeyup="search(this.value)" class="form-control my-4" placeholder="search by name">
+            <div class="output bg-light">
+                <table class="table">
+                    <thead>
+                        <th>name site</th>
+                        <th>visit</th>
+                        <th>delete</th>
+                        <th>update</th>
+                    </thead>
+                    <tbody id="tablebody" >
+
+
+                    </tbody>
+                </table>
+            </div>
+            <hr/>
+            <footer><h6 class="text-muted">2019 book marker</h6></footer>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
